@@ -1,0 +1,11 @@
+import sympy as sp
+
+# Define symbolic variables
+x = sp.symbols('x')
+
+# Define the function to integrate
+function_to_integrate = x**2 * sp.exp(-x)
+
+# Perform symbolic integration
+integral_result = sp.integrate(function_to_integrate, x)
+print("Symbolic Integral Result:", integral_result)
